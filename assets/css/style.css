@@ -7,7 +7,7 @@
 
 /* || Variables */
 
-.root {
+:root {
 
     --primery_color: #101A24;
     --secondry_color: #EA6D27;
@@ -51,7 +51,6 @@
 .text_60 {font-size: var(--text_60);}
 .text_50 {font-size: var(--text_50);}
 .text_20 {font-size: var(--text_20);}
-.text_16 {font-size: var(--text_16);}
 .text_15 {font-size: var(--text_15);}
 .text_12 {font-size: var(--text_12);}
 
@@ -73,6 +72,9 @@
 .img_op_1 {opacity: 10%;}
 .img_op_2 {opacity: 15%;}
 
+/* Overflow */
+.ov_hidden {overflow: hidden;}
+
 /* List Style */
 .li_style_none {list-style-type: none;}
 
@@ -81,9 +83,11 @@
 
 /* Text align */
 .text_align {text-align: center;}
+.align_center {align-items: center;}
 
 /* Margin */
 .margin_auto {margin-inline: auto;}
+
 /* Padding */
 
 /* Border */
@@ -91,9 +95,6 @@
 
 /* Border Shadow */
 .box_shadow {box-shadow: 0 30px 0 10px rgba(0, 0, 0, 0.30);}
-
-/* Border Radius */
-.br_radious {}
 
 
 /* z-index */
@@ -113,14 +114,14 @@
 /* || Blocks */
 
 /* Button */
-.book_table {}
-
-/* line */
-/* .icon_line {
-    border-top: 2px solid #333; 
-    margin-top: 23rem;
-    width: 3rem;
-} */
+.btn{
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    color: var(--white_color);
+    background-color: var(--secondry_color);
+    border-radius: 0.625rem 0.25rem 0.625rem 0.25rem;
+    margin-top: 3.938rem;
+}
 
 /* Container Basics */
 .container{
