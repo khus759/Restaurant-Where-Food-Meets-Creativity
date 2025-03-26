@@ -1,6 +1,7 @@
 body {
     background-image: url(/assets/images/circles_banner.svg);
     background-repeat: no-repeat;
+    font-family: "Inter", sans-serif;
 }
 
 /* Navigation_Start */
@@ -10,7 +11,7 @@ body {
 
 .nav__ul{
     margin-left: 10.063rem;
-    margin-right: 12rem;}
+    margin-right: 10.063rem;}
 
 .nav__ul li {
     font-weight: var(--f_weight_regular);
@@ -18,3 +19,11 @@ body {
     margin-left: 2.813rem;
 }
 /* Navigation_End */
+
+/* Footer_Start */
+
+.footer__content {padding-top: 6rem;}
+
+.footer__bottom{margin-top: 5.313rem;}
+
+/* Footer_End */
