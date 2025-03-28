@@ -1,17 +1,14 @@
 body {
-    background-image: url(/assets/images/circles_banner.svg);
-    background-repeat: no-repeat;
     font-family: "Inter", sans-serif;
 }
 
 /* Navigation_Start */
+.dropdown{display: none;}
 .nav__logo {
     margin-top: 3.5rem;
     display: inline-block;}
 
-.nav__ul{
-    margin-left: 10.063rem;
-    margin-right: 10.063rem;}
+.nav__ul{margin-inline: 10.063rem;}
 
 .nav__ul li {
     font-weight: var(--f_weight_regular);
@@ -21,9 +18,211 @@ body {
 /* Navigation_End */
 
 /* Footer_Start */
+.mb-top-p{margin-top: 1.313rem;}
 
 .footer__content {padding-top: 6rem;}
 
-.footer__bottom{margin-top: 5.313rem;}
-
+.footer__nav, .footer__dish, .footer__social-media { margin-top: 10rem;}
 /* Footer_End */
+
+/* media queries of header and footer */
+
+
+/* Responsive styles for 992px screen */
+@media (max-width: 992px) {
+    /* Header adjustments */
+    header .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 4rem;
+    }
+    header .container nav ul {
+        margin-left: 1rem;
+    }
+    header .container nav a {
+        margin-left: .07rem;
+    }
+    .btn {
+        padding-inline: 2rem;
+        padding-block: .5rem;
+        margin-top: 2rem;
+        font-size: var(--text_12);
+        line-height: var(--l_height_21);
+    }
+   
+    /* Footer promo responsiveness */
+    .footer__promo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* padding-left: 3rem; */   
+    }
+    .footer__promo img {
+        /* width: 100%; */
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer__promo .email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__promo .email input[type="email"] {
+        width: 90%;
+        max-width: 600px;
+        margin-top: 1rem;
+    }
+    .footer__promo .btn--subscribe {
+        position: absolute;
+        margin-top: 1.5rem;
+        right: 14rem;
+        padding: 1rem;
+        
+    }
+
+    /* Footer bottom adjustments */
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__logo-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: .5rem;
+        gap: .4rem;
+    }
+    .footer__nav, .footer__dish,.footer__social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+    .footer__social-media ul {
+        justify-content: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .footer__policy {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    .footer__copy-right {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+/* Responsive styles for 768px screen */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    header .container nav a {
+        margin-left: 6rem;
+    }
+    .nav__ul {
+        display: none;
+    }
+    .dropdown {
+        display: inline-block;
+        margin-top: 4rem;
+    }
+    .btn {
+        font-size: var(--text_12);
+        padding-inline: 1.5rem;
+        padding-block: 0.5rem;
+        margin-top: 4rem;
+        margin-left: 3rem;
+    }
+
+    /* Footer promo responsiveness */
+    .footer__promo {
+        padding-top: 4rem;
+    }
+    footer__promo img{
+        width: 70%;
+        
+    }
+    .footer__promo p{
+        font-size: var(--text_20);
+        line-height: var(--l_height_21);
+    }
+    .footer__promo .email input[type="email"] {
+        width: 100%;
+    }
+    .footer__promo .btn--subscribe {
+        right: 15rem;
+    }
+
+    /* Footer bottom adjustments */
+    .footer__bottom {
+        gap: 2rem;
+    }
+    .footer__logo-sec,
+    .footer__nav,
+    .footer__dish,
+    .footer__social-media {
+        margin-top: 2rem;
+    }
+    .footer__social-media ul {
+        gap: 1rem;
+    }
+}
+
+/* Responsive styles for 575px screen */
+@media (max-width: 575px) {
+    /* Header adjustments */
+    
+    .dropdown {
+        margin-top: 4rem;
+    }
+    .btn {
+        font-size: var(--text_12);
+        /* padding-inline: 2rem; */
+        margin-left: 3rem;
+        margin-top: 4rem;
+    }
+
+    /* Footer promo responsiveness */
+    .footer__promo {
+        padding-top: 1rem;
+    }
+    .footer__promo img{
+        width: 90%;
+    }
+    .footer__promo p{
+        font-size: var(--text_15);
+        /* margin-bottom: 2rem; */
+    }
+    .footer__promo .email input[type="email"] {
+        width: 100%;
+    }
+    .footer__promo .btn--subscribe {
+        right: 9rem;
+    }
+
+    /* Footer bottom adjustments */
+    .footer__bottom {
+        gap: 1.5rem;
+    }
+    .footer__logo-sec,
+    .footer__nav,
+    .footer__dish,
+    .footer__social-media {
+        margin-top: .5rem;
+    }
+    .footer__social-media ul {
+        gap: 0.5rem;
+    }
+}

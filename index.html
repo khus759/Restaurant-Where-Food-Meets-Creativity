@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover delicious dishes at our restaurant where food meets creativity. Explore our menu, book a table, and enjoy memorable dining experiences.">
     <title>Restaurant-Where Food Meets Creativity</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -14,49 +15,114 @@
         rel="stylesheet">
 </head>
 
-<body class="ov_hidden">
+<body>
     <header>
         <div class="container">
-            <nav class="d_flex ">
-                <img class="nav__logo" src="./assets/images/logo_restro.svg" alt="Restaurant_logo"
-                    aria-label="Restaurant_logo">
-                <ul class="nav__ul d_flex li_style_none">
-                    <li><a class="link_style_none primery_color l_height_29" href="#">Menu</a></li>
-                    <li><a class="link_style_none primery_color l_height_29" href="#">Events</a></li>
-                    <li><a class="link_style_none primery_color l_height_29" href="#">Gallery</a></li>
-                    <li><a class="link_style_none primery_color l_height_29" href="#">About</a></li>
-                    <li><a class="link_style_none primery_color l_height_29" href="#">Contact</a></li>
-                </ul>
-                <a class="link_style_none btn f_family_dav" href="#">Book a table</a>
+            <nav class="d_flex">
+            <a href="#"><img class="nav__logo" src="./assets/images/logo_restro.svg" alt="Restaurant_logo" loading="lazy" aria-label="Restaurant_logo"></a>
+            <ul class="nav__ul d_flex li_style_none">
+                <li><a class="link_style_none primery_color l_height_29" href="#">Menu</a></li>
+                <li><a class="link_style_none primery_color l_height_29" href="#">Events</a></li>
+                <li><a class="link_style_none primery_color l_height_29" href="#">Gallery</a></li>
+                <li><a class="link_style_none primery_color l_height_29" href="#">About</a></li>
+                <li><a class="link_style_none primery_color l_height_29" href="#">Contact</a></li>
+            </ul>
+            <a class="link_style_none btn f_family_dav" href="#">Book a table</a>
+
+            <div class="dropdown">
+                <img class="dropbtn" src="./assets/images/hamburger.png" alt="hamburger-image" title="click">
+                <div class="dropdown-content">
+                <a href="#">Menu</a>
+                <a href="#">Events</a>
+                <a href="#">Gallery</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                </div>
+            </div>
             </nav>
         </div>
     </header>
     <main></main>
     <footer>
-        <div class="container">
-            <div class="footer__promo">
-                <img class="z_index1 pt_absolute" src="./assets/images/promo-img.svg" alt="promo-img">
-                <div class="footer__content text_align">
-                    <p class="f_family_dav l_height_58 text_50 f_weight_boldr white_color ">Get Or Promo Code by <span
-                            class="d_block">Subscribing To our Newsletter</span></p>
-                    <form action="/submit" get="post" class="email">
-                        <label for="email id"></label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" class="br_none ">
-                        <a href="#" class="f_weight_boldr white_color pt_absolute z_index2 btn btn--subscribe link_style_none">Subscribe</a> 
-                    </form>
+        <section class="footer-section">
+            <div class="container">
+                <div class="footer__promo">
+                    <img class="z_index1 pt_absolute" src="./assets/images/promo-img.svg" alt="promo-img" loading="lazy">
+                    <div class="footer__content text_align">
+                        <p class="f_family_dav l_height_58 text_50 f_weight_boldr white_color">Get Or Promo Code by
+                            <span class="d_block">Subscribing To our Newsletter</span>
+                        </p>
+                        <form action="/submit" method="post" class="email">
+                            <label for="email id"></label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" class="br_none"
+                                required>
+                            <button type="submit"
+                                class="f_weight_boldr white_color pt_absolute z_index2 btn btn--subscribe link_style_none br_none">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom d_flex">
+                    <img class="z_index1 pt_absolute img_op_3 rotate-paien left-food "
+                        src="./assets/images/bg_food_paien.svg" alt="food_paien" loading="lazy">
+                    <div class="footer__logo-sec mb_77">
+                        <img src="./assets/images/logo_restro.svg" alt="logo_restro" aria-label="Restaurant_logo"
+                            class="mb_logo" loading="lazy">
+                        <p class="l_height_29 dark_grey_color">Lorem ipsum dolor sit amet, consectetur adipiscing <span
+                                class="d_block">elit,sed do eiusmod tempor incididunt ut labore et</span> dolore <a
+                                href="#" class="dark_grey_color">.Learn more </a></p>
+                        <p class="mb-top-p text_12 f_weight_boldr l_height_40 primery_color">OPENING HOURS</p>
+
+                        <ul class="li_style_none d_flex gap_42 mb_47">
+
+                            <li class="dark_grey_color l_height_29 f_weight_regular">Monday - Friday <span
+                                    class="d_block"><time datetime="08:00">8:00 AM</time> - <time datetime="21:00">9:00 PM</time>
+                                </span></li>
+                            <li class="dark_grey_color l_height_29 f_weight_regular">Saturday <span
+                                    class="d_block"><time datetime="08:00">8:00 AM</time> - <time datetime="21:00">9:00 PM</time>
+                                </span></li>
+                            <li class="dark_grey_color l_height_29 f_weight_regular">Sunday <span
+                                    class="d_block">CLOSED</span></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav mb_104">
+                        <p class="text_12 f_weight_boldr l_height_40 primery_color">Navigation</p>
+                        <ul class="li_style_none">
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#" title="View our menu">Menu</a></li>
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#" title="Know about Restaurant">About us</a></li>
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#" title="Click to contact">Contact us</a></li>
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#" title="Restaurant main dishes">Main dishes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__dish mb_68">
+                        <p class="text_12 f_weight_boldr l_height_40 primery_color">DISHES</p>
+                        <ul class="li_style_none">
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#">Fish & Viggies</a></li>
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#">Tofu Chili</a></li>
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#">Egg & Cocumber</a></li>
+                            <li><a class="link_style_none dark_grey_color l_height_40" href="#">Lumpia w/Suace</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__social-media">
+                        <p class="text_12 f_weight_boldr l_height_40 primery_color">FOLLOW US</p>
+                        <ul class="li_style_none d_flex gap_14-69">
+                            <li><a href="#"><img src="./assets/images/Facebook.svg" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="./assets/images/instagram_logo.svg" alt="instagram"></a></li>
+                            <li><a href="#"><img src="./assets/images/twitter_logo.svg" alt="twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copy-right d_flex dark_grey_color l_height_29 gap_425 br_line1">
+                    <p class=" mb_35">&copy;2022 Restaurants. All Right Reserved. Designed by <span
+                            class="f_weight_boldr">Isaac</span></p>
+                    <div class="footer__policy d_flex gap_14-69  mb_35">
+                        <a href="#" class="link_style_none dark_grey_color l_height_29">Terms of Service</a>
+                        <a href="#" class="link_style_none dark_grey_color l_height_29"> Privacy Policy</a>
+                    </div>
                 </div>
             </div>
-            <div class="footer__bottom">
-                <img class="z_index1 pt_absolute img_op_3" src="./assets/images/bg_food_paien.svg" alt="food_paien">
-                <div class="footer__logo-sec">
-                    <img src="./assets/images/logo_restro.svg" alt="logo_restro" aria-label="Restaurant_logo" class="mb_logo">
-                    <p class="l_height_29 dark_grey_color">Lorem ipsum dolor sit amet, consectetur adipiscing <span class="d_block">elit,sed do eiusmod tempor incididunt ut labore et</span>  dolore <a href="#" class="dark_grey_color">.Learn more </a></p>
-                </div>
-                <div class="footer__nav">
-                    <p class="text_12 f_weight_boldr l_height_40 primery_color">Navigation</p>
-                </div>
-            </div>
-        </div>  
+        </section>
     </footer>
 </body>
 
