@@ -9,7 +9,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+body {
+    font-family: "Inter", sans-serif;
+}
 /* || Variables */
 
 :root {
@@ -62,7 +64,10 @@ html {
 }
 
 .bg_light_grey {
-    color: var(--light_grey_color);
+    background-color: var(--light_grey_color);
+}
+.bg_white_color {
+    background-color: var(--white_color);
 }
 
 /* Text Size */
@@ -140,7 +145,12 @@ html {
 .f_family_inter {
     font-family: "Inter", sans-serif;
 }
-
+.radius-50 {
+    border-radius: 50%;
+}
+.margin_auto {
+    margin-inline:auto;
+}
 /* Opacity */
 .img_op_1 {
     opacity: 10%;
@@ -173,11 +183,16 @@ html {
 .text_align {
     text-align: center;
 }
+.text_left {
+    text-align: left;
+}
 
 .align_center {
     align-items: center;
 }
-
+.width_55{
+    width: 55%;
+}
 /* Margin */
 .margin_auto {
     margin-inline: auto;
@@ -194,7 +209,9 @@ html {
 .mb_104 {
     margin-right: 6.5rem;
 }
-
+.mb_21 {
+    margin-bottom: 1.313rem;
+}
 .mb_47 {
     margin-bottom: 2.938rem;
 }
@@ -206,16 +223,24 @@ html {
 .mb_85 {
     margin-top: 5.313rem;
 }
-
+.mt_240 {
+    margin-top: 19.563rem;
+}
+.mt_ban-img {
+    margin-block: 10.563rem;
+}
 .left-food {
     left: 20%;
 }
-
-/* Padding */
 .mb_logo {
     margin-bottom: 1.794rem;
     margin-top: 7.063rem;
 }
+/* Padding */
+.pb_22 {
+    padding-bottom: 1.375rem;
+}
+
 
 /* Border */
 .white_border {
@@ -249,11 +274,23 @@ html {
     position: absolute;
 }
 
+.p-right_12 {right: 11.8rem ;}
+
+.left-dot {
+    left: 45%;
+    padding-top: 7.313rem;
+    padding-bottom: 9.563rem;
+}
+
 /* Transform */
 .rotate-paien {
     transform: rotate(-85deg);
     transition: transform 0.3s ease;
     margin-left: 19.945rem;
+}
+
+.rotate-paien-2 {
+    bottom: -273rem; 
 }
 
 .d_block {
@@ -277,6 +314,10 @@ html {
     justify-content: space-between;
 }
 
+.jstify_space_evenly {
+    justify-content: space-evenly;
+}
+
 .gap_104 {
     gap: 6.5rem;
 }
@@ -288,7 +329,9 @@ html {
 .gap_42 {
     gap: 2.625rem;
 }
-
+.gap_30 {
+    gap: 1.875rem;
+}
 .gap_77 {
     gap: 4.813rem;
 }
@@ -310,7 +353,7 @@ html {
     margin-top: 3.938rem;
     font-size: var(--text_20);
     line-height: var(--l_height_29);
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .email input[type="email"] {
@@ -324,6 +367,10 @@ html {
 
 .br_line1 {
     border-top: 1px solid var(--border_line);
+}
+.br_line2 {
+    border-bottom: 1px solid var(--border_line);
+    width: 1rem;
 }
 
 .dropbtn {
@@ -355,19 +402,106 @@ html {
     display: block;
   }
   
-  /* .dropdown-content a:hover {background-color: var(--secondry_color)} */
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: var(--white_color);}
 
+.dishes_1 {
+    width: 14.013rem;
+    height: 13.294rem;
+    right: -8rem;
+    top: -12rem;   
+       
+}
+.dishes_2 {
+    width: 11.288rem;
+    height: 16.089rem;
+    right: -31.8rem;
+    top: -12rem;  
+       
+}
+.dish-card{
+    border: 2px solid var(--white_color);
+}
+.p-img_1 {
+    right: 6rem;
+    top: -4rem;   
+}
+.p-img_2 {
+    right: -25rem;
+    top: -23rem;   
+       
+}
+.p-img_3 {
+    right: -11rem;
+    top: 9rem;  
+       
+}
+.testimonial {
+    top: -3rem;
+    left: 43%;
+}
+.star {
+    top: -3.7rem;
+    left: 43%;
+    /* padding-bottom: -3.375rem; */
+    
+}
+blockquote {
+    bottom: 3rem;
+    margin-inline: 7.813rem;
+}
+blockquote p {
+    padding-top: 1rem;
+}
+.price {
+    position: absolute;
+    top: -55px;
+    right: 19px;
+    background-color: var(--primery_color);
+    color: var(--white_color);
+    padding: 15px 10px;
+    border-radius: 50px;
+    z-index: 1;
+    font-weight: var(--f_weight_bold);
+    font-size: 1rem;
+    
+}
+.onion-img {
+    right: -12.7rem;
+    top: -11rem;  
+}
+.garlic {
+    right: -35rem;
+    top: -11rem;
+}
+.corinder {
+    right: -24rem;
+    top: -4rem;
+}
+a:hover {
+    background-color:#5C6574;
+}
+
+
 /* Modifiers */
+
+.btn--btns {
+    border-radius: 0.625rem;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    border-radius: 0.999rem 0.25rem 0.999rem 0.25rem;
+    margin-right: 1rem;
+    
+}
+.btn--menu {
+    background-color: var(--primery_color);
+}
 
 .btn--subscribe {
     border-radius: 0.625rem;
     padding-inline: 2.188rem;
     margin-top: 4.15rem;
-    right: 28.113rem;
-    /* position: sticky; */
-    
+    right: 28.113rem;   
 }
 
 /* Container Basics */
